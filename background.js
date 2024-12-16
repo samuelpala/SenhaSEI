@@ -1,5 +1,10 @@
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-  if (changeInfo.status === 'complete' && tab.url.includes('sip.df.gov.br')) {
+  // Verifica se a página foi completamente carregada e se a URL corresponde ao domínio desejado
+  if (
+    changeInfo.status === 'complete' &&
+    tab.url &&
+    tab.url.includes('sip.df.gov.br')
+  ) {
     chrome.scripting.executeScript({
       target: { tabId },
       func: () => {

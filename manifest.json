@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Alterar Tipo de Campo",
-  "version": "1.0",
-  "description": "Muda o tipo do campo de senha para password ao carregar a página.",
+  "name": "Preencher Senha SEI",
+  "version": "1.1",
+  "description": "Muda o tipo do campo de senha para password ao carregar a página para permitir o preenchimento automático por meio do google senhas.",
   "permissions": ["scripting", "activeTab"],
   "host_permissions": ["https://sip.df.gov.br/*"],
   "background": {
