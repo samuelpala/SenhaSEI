@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Alterar Tipo de Campo",
+  "version": "1.0",
+  "description": "Muda o tipo do campo de senha para password ao carregar a página.",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["https://sip.df.gov.br/*"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
